@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Muestras</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 500px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Muestra</h2>
+        <form>
+            <label>ID de Muestra</label>
+            <input type="text" placeholder="Ej. 123456" required>
+            
+            <label>Fecha</label>
+            <input type="date" required>
+            
+            <label>Investigador</label>
+            <input type="text" placeholder="Nombre del investigador" required>
+            
+            <label>Tipo de Muestra</label>
+            <input type="text" placeholder="Ej. ADN, sangre, tejido..." required>
+            
+            <label>Ubicación</label>
+            <input type="text" placeholder="Ej. Laboratorio A, congelador 3...">
+            
+            <label>Comentarios Adicionales</label>
+            <textarea placeholder="Notas adicionales sobre la muestra..."></textarea>
+            
+            <label>Subir Foto</label>
+            <input type="file" accept="image/*">
+            
+            <button type="submit">Guardar Muestra</button>
+        </form>
+    </div>
+</body>
+</html>
